@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta charset="utf-8">
+<title>on going | Interactive Learning</title>
+<link href="../ejs/css/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../ejs/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../ejs/jquery/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="../ejs/jquery/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+<canvas id="canvas" width="1024" height="740"></canvas>
+<script>
+var getRandomColor = function(){ 
+
+  return '#'+(function(h){ 
+    return new Array(7-h.length).join("0")+h 
+  })((Math.random()*0x1000000<<0).toString(16)) 
+}
+
+window.onload = function(){
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+   	var cc={r:0,g:0,b:56};	
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.lineWidth = 3;
+	ctx.font = "bold "+String(33)+"px consolas";
+	ctx.textAlign = 'center';
+	ctx.textBaseline = 'bottom';    
+    for(var i = 0; i < 113; i ++){
+    	cc.b = 56 + Math.floor( i*2 );
+	    ctx.beginPath();
+	  	ctx.fillStyle = getRandomColor();
+	    ctx.strokeStyle =getRandomColor();
+        var x = 30 + Math.random()*900;
+        var y = 20 + Math.random()*600;
+        ctx.fillRect(x, y, 20,  20);
+        ctx.rect(x,y,20,20)
+	    ctx.stroke();
+	    if (i==112){
+		    ctx.fillText("on going...",x,y)
+	    }
+    }
+};
+</script>
+	
+
+	
+</body>
+</html>
