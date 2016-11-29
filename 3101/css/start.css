@@ -1,0 +1,30 @@
+.desktop
+{
+	background:#FFFFF5;
+	/*background:url(../images/bg.png) no-repeat #CCCCCC;*/
+	overflow:hidden;
+}
+
+#graphDiv
+{
+background : #FFFFF5;
+}
+
+
+#leftDiv,#demoDiv
+{
+	background : #FFFFFF;
+}
+
+#capDiv
+{
+	background : #FFFFFF;
+}	
+	
+
+#tabComp
+{
+	background : #FFFFFF;
+}		
+
+
