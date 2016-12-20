@@ -1,0 +1,34 @@
+.wrapper
+{
+	background:#CCCCCC;
+	/*background:url(../images/bg.png) no-repeat #CCCCCC;*/
+	overflow:hidden;
+}
+
+#graphDiv
+{
+background : #EEF9F5;
+}
+
+
+#leftDiv,#demoDiv
+{
+	background : #DDDDDD;
+}
+
+#capDiv
+{
+	background : #FFFFFF;
+}	
+	
+
+#tabComp
+{
+	background : #EEEEEE;
+}		
+
+#txt_10
+{
+	font-family: "serif";
+	float: right;
+}
