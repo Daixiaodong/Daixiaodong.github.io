@@ -1,0 +1,27 @@
+.wrapper
+{
+	background:#CCCCCC;
+	/*background:url(../images/bg.png) no-repeat #CCCCCC;*/
+	overflow:hidden;
+}
+
+#mainDiv
+{
+background : #FFF;
+}
+
+
+#leftDiv,#rightDiv
+{
+	background : #FFF;
+}
+
+#capDiv
+{
+	background : #FFFFFF;
+}		
+
+#tabComp
+{
+	background : #CCCCCC;
+}		
